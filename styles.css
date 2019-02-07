@@ -1,0 +1,352 @@
+html {box-sizing:border-box;}
+*, *:before, *:after {box-sizing:inherit;}
+
+@font-face {
+    font-family: weatherStar;
+    src: url(./Fonts/Star4000/Star4000.ttf);
+}
+
+@font-face {
+    font-family: weatherStarSmall;
+    src: url(./Fonts/Star4000/Star4000Small.ttf);
+}
+
+body {
+	width: 1200px;
+	margin: 0 auto;
+	background-position: center;
+	background-color: rgb(28, 16, 81);
+	font-family: 'weatherStar', monospace;
+	text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+ 		 
+
+}
+
+
+
+.subBar {
+	margin-top: 50px;
+	width: 900px;
+	height: 125px;
+	background: linear-gradient(rgb(180, 98, 20), rgb(49, 22, 73));
+	position: absolute;	
+}
+
+
+.outer-mask {
+    position: absolute;
+    top: 50px;
+    width: 950px;
+    height: 112px;
+    overflow: hidden;
+}
+.inner-mask {
+    position: absolute;
+    left: -50px;
+    top: 0px;
+    width: 950px;
+    height: 112px;
+    overflow: hidden;
+    -webkit-transform: skew(-40deg, 0deg);
+        -ms-transform: skew(-40deg, 0deg);
+         -o-transform: skew(-40deg, 0deg);
+            transform: skew(-40deg, 0deg);
+}
+.content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 950px;
+    height: 112px;
+    background-color: rgb(180, 98, 20);
+    background-image: -webkit-linear-gradient(top, rgb(180, 98, 20), rgb(49, 22, 73));
+    background-image:    -moz-linear-gradient(top, rgb(180, 98, 20), rgb(49, 22, 73));
+    background-image:     -ms-linear-gradient(top, rgb(180, 98, 20), rgb(49, 22, 73));
+    background-image:      -o-linear-gradient(top, rgb(180, 98, 20), rgb(49, 22, 73));
+    background-image:         linear-gradient(top, rgb(180, 98, 20), rgb(49, 22, 73));
+}
+
+
+/*.subBar {
+	margin-top: 50px;
+	border-top: 160px solid rgb(196, 89, 1);
+    border-right: 150px solid transparent;
+	border-left: 0 solid transparent;
+	border-image-source: linear-gradient(rgb(49, 22, 73), rgb(180, 98, 20));
+	border-image-slice: 160;
+	background: linear-gradient(rgb(49, 22, 73), rgb(180, 98, 20));
+	height: 0;
+	width: 950px;
+}*/
+
+.infoBar {
+	width: 1000px;
+	height: 150px;
+	margin-left: 80px;
+	display: flex;
+	position: relative;
+	padding-top: 50px;
+}
+
+
+#logo {
+	border-radius: 20px;
+	box-shadow: 4px 7px;
+	margin-top: -25px;
+	margin-left: 25px;
+}
+
+#headline {
+	color: rgb(223, 180, 39);
+	font-size: 50px;
+	width: 500px;
+	padding-left: 25px;
+}
+
+.headlineTop {
+	width: 500px;
+	height: 50px;
+}
+
+.headlineBottom {
+	width: 500px;
+	height: 50px;
+}
+
+
+.datetime {
+	padding-top: 15px;
+	width: 300px;
+}
+
+#date, #time {
+	color: white;
+	font-style: bold;
+	font-size: 50px;
+	font-family: 'weatherStarSmall', monospace;
+	text-align: right;
+	justify-content: center;
+	margin: 0;
+	width: 270px;
+	height: 40px;
+	transform: scale(1.1, 0.9);
+}
+
+main {
+	width: 1200px;
+	height: 600px;
+	background: linear-gradient(rgb(49, 22, 73), rgb(180, 98, 20)); 
+}
+
+#container {
+	width: 980px;
+	height: 600px;
+	margin: 0 auto;
+	margin-top: 12px;
+	background-color: rgb(36, 43, 90);
+	-webkit-box-shadow: inset 0 0 75px rgb(83, 90, 125);
+	box-shadow: inset 0 0 75px rgb(83, 90, 125);
+
+	/*border: 20px solid rgb(83, 90, 125);
+	border-radius: 6px;
+	border-image-source: radial-gradient(rgb(83, 90, 125), rgb(36, 43, 90)); /*not quite right here*/
+	/*border-image-slice: 20;*/
+/*	display: flex;*/
+	color: rgb(205,	210, 221);
+}
+
+#containerClmns {
+	width: 940px;
+	height: 40px;
+/*	margin-top: -30px;*/
+	font-family: 'weatherStarSmall', monospace;
+	font-style: bold;
+	font-size: 40px;
+	text-align: left;
+}
+
+.columnRow {
+	display: flex;
+	width: 980px;
+}
+
+.cityClmn {
+	width: 420px;
+}
+
+.cityTempClmn {
+	width: 80px;
+}
+
+.cityWeatherClmn {
+	width: 360px;
+}
+
+.cityWindClmn {
+	width: 100px;
+}
+
+#screen {
+	width: 940px;
+	height: 550px;
+	margin: 0 auto;
+}
+
+.page1Box {
+	width: 980px;
+	height: 600px;
+	display: flex;
+}
+
+.mainInfo {
+	padding-top: 10px;
+	width: 490px;
+	text-align: center;
+}
+
+.tempBox {
+	display: inline-flex;
+}
+
+.subInfo {
+	width: 490px;
+}
+
+h1 {
+	font-size: 72px;
+	margin: 0;
+
+}
+
+h2 {
+	font-size: 64px;
+	margin: 5px;
+}
+
+h3 {
+	font-size: 44px;
+	margin: 20px;
+}
+
+
+footer {
+	width: 1200px;
+	height: 200px;
+	margin-top: 2px;
+	background-color: rgb(36, 43, 90);
+	border-top: 2px solid gray;
+	color: white;
+	padding-left: 175px;
+
+}
+
+.gif {
+	width: 250px
+
+}
+
+.gifSmall {
+	width: 210px;
+}
+
+#cityName {
+	color: rgb(223, 180, 39);
+	font-size: 50px;
+	margin-left: -25px;
+}
+
+.cityRow {
+	width: 940px;
+	height: 80px;
+	display: flex;
+	font-size: 50px;
+}
+
+.city {
+	width: 400px;
+}
+
+.cityTemp {
+	width: 80px;
+}
+
+.cityWeather {
+	width: 360px;
+}
+
+.cityWind {
+	width: 100px;
+}
+
+
+.forecast {
+	width: 940px;
+	height: 578px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 50px;
+	padding-top: 18px;
+	margin: 0 auto;
+
+}
+
+.days {
+	width: 300px;
+	height: 570px;
+	border: 5px solid gray;
+	background-image: 
+		linear-gradient(rgb(108,139,243) 12.5%, rgb(99,119,242) 12.5%, 
+						rgb(99,119,242) 25%, rgb(89,99,240) 25%, 
+						rgb(89,99,240) 37.5%, rgb(80,79,239) 37.5%, 
+						rgb(80,79,239) 50%, rgb(70,60,238) 50%,
+						rgb(70,60,238) 62.5%, rgb(61,40,237) 62.5%,
+						rgb(61,40,237) 75%, rgb(51,20,235) 75%,
+						rgb(51,20,235) 87.5%, rgb(42,0,234) 87.5%,
+						rgb(42,0,234) 100%, rgb(42,0,234) 100%);
+						
+		/*linear-gradient
+		linear-gradient(rgb(88, 84, 245), rgb(79, 68, 240)), 
+		linear-gradient(rgb(79, 68, 240), rgb(59, 51, 238)),
+		linear-gradient(rgb(59, 51, 238), rgb(47, 25, 240)),
+		linear-gradient(rgb(47, 25, 240), rgb(44, 0, 241)),
+		linear-gradient(rgb(44, 0, 241), rgb(36, 0, 206));*/
+	text-align: center;
+}
+.day {
+	width: 300px;
+	height: 71.25px;
+	color: rgb(223, 180, 39)
+}
+.dayGif {
+	margin: 0 auto;
+	width: 213.75px;
+	height: 213.75px;
+
+
+}
+
+.dayCond {
+	width: 300px;
+	height: 142.5px;
+}
+
+.tempsBox {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.dayTemp {
+	font-size: 75px;
+}
+
+/*126	127	242	
+111	98	246	
+88	84	245	
+79	68	240	
+59	51	238	
+47	25	240	
+44	0	241	
+36	0	206	*/
+
+
