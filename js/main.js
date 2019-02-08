@@ -156,7 +156,7 @@ function startPage() {
     let submit = document.querySelector('[rel="start"]')
     let musicOn = document.querySelector('[rel="musicOn"]')
     let musicTrack = document.querySelector('[rel="cdPlayer"]')
-    let musicURL = document.querySelector('[rel="mp3URL')
+    let musicURL = document.querySelector('[rel="mp3URL"]')
     let unitSelector = document.querySelector('[rel="unitSelector')
 
     submit.addEventListener('click', function(event) {
