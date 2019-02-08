@@ -157,7 +157,7 @@ function startPage() {
     let musicOn = document.querySelector('[rel="musicOn"]')
     let musicTrack = document.querySelector('[rel="cdPlayer"]')
     let musicURL = document.querySelector('[rel="mp3URL"]')
-    let unitSelector = document.querySelector('[rel="unitSelector')
+    let unitSelector = document.querySelector('[rel="unitSelector"]')
 
     submit.addEventListener('click', function(event) {
         setMusicVariables();
