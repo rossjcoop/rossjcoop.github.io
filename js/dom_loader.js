@@ -1,5 +1,3 @@
-const apiId = "e8560a1109f936430203f88c4e09f8f1"; //My api id for openweathermap.org
-
 const headline = document.getElementById("headline");
 const timestamp = document.getElementById("time");
 const datestamp = document.getElementById("date");
@@ -52,6 +50,16 @@ function noData(data) { ///Will display if no data reports, or if error.
 	if(data == undefined) {
 		return "No Data"
 	}
+}
+
+
+function errorPage() {
+	headline.innerHTML = `
+    <div class="headlineTop">Sorry Folks!</div>`
+    container.innerHTML = `   
+        <h1>No data</h1> 
+        <p>Check back soon, I'm going to make some changes and bring in a new web api. If you need the weather report in Las Vegas, it will seriously rain for the rest of the day here on Valentine's Day! And it will be cold!</p>     
+    `     
 }
 
 

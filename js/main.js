@@ -88,7 +88,8 @@
 // };
 
 window.onload = function() {
-	startPage()
+	// startPage()
+    errorPage()
 	getTime()	
 	setInterval(getTime, 1000)
 };
